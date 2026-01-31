@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . .
 
 # build the jar
-RUN ./mvnw clean package -DskipTests
+RUN ./mvn clean package -DskipTests
 
 # expose spring boot port
 EXPOSE 8080
