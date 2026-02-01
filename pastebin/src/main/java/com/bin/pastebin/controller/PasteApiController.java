@@ -12,7 +12,9 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/pastes")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://pastebin-ui-eta.vercel.app"})
 public class PasteApiController {
 
     private final PasteService service;
